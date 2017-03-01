@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/APPPGBG"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="65dp"
+                  android:background="@color/white"
+                  android:layout_marginTop="12dp"
+                  android:gravity="center"
+
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/my_test_pass"
+            android:layout_marginLeft="12dp"
+            />
+
+        <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:hint="请输入旧密码"
+        android:background="@null"
+        android:padding="10px"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="12dp"
+        android:inputType="textPassword"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/app_separator_offx"
+    android:paddingRight="@dimen/app_separator_offx"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"/>
+
+</LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="65dp"
+                  android:background="@color/white"
+                  android:gravity="center"
+
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/my_test_pass"
+            android:layout_marginLeft="12dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="请输入新密码"
+            android:background="@null"
+            android:padding="10px"
+            android:inputType="textPassword"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="12dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/app_separator_offx"
+        android:paddingRight="@dimen/app_separator_offx"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="65dp"
+                  android:background="@color/white"
+                  android:gravity="center"
+
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/my_test_pass"
+            android:layout_marginLeft="12dp"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="请再次输入新密码"
+            android:background="@null"
+            android:padding="10px"
+            android:inputType="textPassword"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="12dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/roundButton"
+        android:text="提交修改"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/white"
+        android:background="@drawable/xcornersbg"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>

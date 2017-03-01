@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/RadioGray"
+              android:padding="8dp"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:id="@+id/card_cz_main_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Base.Widget.AppCompat.EditText"
+                android:drawableLeft="@drawable/search"
+                android:padding="8dp"
+                android:hint="请输入手机号码"
+                android:background="@drawable/bg_edittext"
+                android:inputType="phone"
+                android:maxLength="11"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_cz_main_has"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/RadioGray"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:gravity="center_vertical"
+                    android:tag="充值卡"
+                    >
+
+                    <TextView
+                        android:textColor="@color/APPOrange"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="基本信息"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="20dp"/>
+
+
+
+                    <TextView
+                        android:background="@color/white"
+                        android:id="@+id/card_cz_main_tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="会员账号"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:id="@+id/card_cz_main_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="会员姓名"
+                        android:textSize="18sp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card_cz_main_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    >
+
+                    <ImageView
+                        android:id="@+id/card_banka_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/prompt"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/card_make_noticMsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="6dp"
+                        android:textColor="#ff4848"
+                        android:text="该手机号码暂时不是会员, 请先注册为怀府网会员"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/app_separator_offx"
+                android:paddingRight="@dimen/app_separator_offx"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+     </LinearLayout>
+
+    <ListView
+        android:id="@+id/card_cz_main_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </ListView>
+
+
+    <TextView
+        android:id="@+id/card_cz_main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/CardBtnGray"
+        android:text="确认消费"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btn_title"
+        android:gravity="center"
+        android:clickable="false"
+        android:onClick="toNext" />
+
+</LinearLayout>

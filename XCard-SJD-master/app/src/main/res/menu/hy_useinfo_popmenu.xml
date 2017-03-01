@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/hy_userinfo_menu_lk"
+        android:title="领卡"
+        />
+
+    <item
+        android:id="@+id/hy_userinfo_menu_bj"
+        android:title="编辑资料"/>
+
+    <item
+        android:id="@+id/hy_userinfo_menu_sc"
+        android:title="删除"/>
+
+</menu>

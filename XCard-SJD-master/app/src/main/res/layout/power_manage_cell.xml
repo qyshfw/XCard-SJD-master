@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/power_manage_cell_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="新用户开卡"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        />
+
+    <CheckBox
+        android:id="@+id/power_manage_cell_checkbox"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_checkbox"
+        android:button="@null"
+        android:checked="false"
+        />
+
+</LinearLayout>

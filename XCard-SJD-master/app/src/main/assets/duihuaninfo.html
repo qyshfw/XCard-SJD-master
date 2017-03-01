@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+
+<script data-main="js/duihuaninfo" src="lib/require-min.js" ></script>
+
+</head>
+<body class="duihuaninfo" ms-controller="duihuaninfo">
+
+<!-- banner -->	
+<div class="top">
+		
+		<img ms-attr="{src: @info.url}" class="bannerpic"/>
+		
+		<div class="name">
+			<span ms-text="@info.name"></span>
+		</div>   
+		
+		<div class="price">
+			<span class="left" ms-text="@info.hfb"></span><span>怀府币</span>
+			<span class="right">剩余<span ms-text="@info.number"></span></span>
+		</div>  
+   		
+</div>
+	
+
+<!-- 详情说明 -->	
+	<div class="infonv">
+		
+		<div class="righttxt">
+			详情说明: 
+		</div>
+		
+	</div>
+	
+	
+	<div id="content" class="content">
+		
+		
+		<span ms-html="@info.content"></span>
+ 
+		
+	</div>
+	
+	
+	
+	<div class="btn" ms-click="@doDH" onclick="doDH()">
+		<b>立即兑换</b>
+	</div>
+	
+	
+	<div id="alertBG" class="alertbg hidden">
+		
+		<div id="alert" style="background: #ffffff;padding: 14px 14px 20px 14px;width: 80%;text-align: center;
+			-moz-border-radius: 12px; 
+    -webkit-border-radius: 12px; 
+    border-radius:12px;
+				">
+			<div style="color: #999999;padding-bottom: 16px">
+				您将消费100怀府币兑换该商品. 点击确认兑换, TA就是你的啦
+			</div>
+			
+			<div>
+				
+				<div ms-click="@alertClick(0)" onclick="alertClick(0)" style="background: #ff8a00;float: left;color: white;width: calc((100% - 10px) * 0.5);padding-top: 10px;padding-bottom: 10px;-moz-border-radius: 8px; 
+    -webkit-border-radius: 8px; 
+    border-radius:8px;">
+					我再想想					
+				</div>
+				
+				<div ms-click="@alertClick(1)" onclick="alertClick(1)" style="background: #ff8a00;float: right;color: white;width: calc((100% - 10px) * 0.5);padding-top: 10px;padding-bottom: 10px;-moz-border-radius: 8px; 
+    -webkit-border-radius: 8px; 
+    border-radius:8px;">
+					确认兑换					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		
+	</div>
+	
+</body>
+</html>

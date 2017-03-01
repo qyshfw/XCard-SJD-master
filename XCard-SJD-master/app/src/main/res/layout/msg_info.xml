@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/APPPGBG"
+    >
+<TextView
+    android:id="@+id/msg_info_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="标题"
+    android:gravity="center"
+    android:layout_marginTop="12dp"
+    android:textSize="17sp"
+    />
+
+    <TextView
+        android:id="@+id/msg_info_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2016-09-25 10:34:57"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        android:textColor="#999999"
+        android:layout_marginBottom="8dp"
+        />
+
+    <WebView
+        android:id="@+id/msg_info_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/APPPGBG"
+        ></WebView>
+
+</LinearLayout>

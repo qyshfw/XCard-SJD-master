@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<link rel="stylesheet" type="text/css" href="css/aui.2.0.css"/>
+
+<script data-main="js/duihuan" src="lib/require-min.js" ></script>
+
+</head>
+<body ms-controller="duihuan">
+
+<!-- banner -->	
+<div style="padding: 16px; overflow: hidden;justify-content:center;
+	align-items:center;
+	display:-webkit-flex;">
+		
+		<input type="tel" style="background: #fff;border: 1px solid #dedede;moz-border-radius: 6px; 
+    -webkit-border-radius: 6px; 
+    border-radius:6px;padding-left: 5px;padding-right: 5px;width: auto;float: left" placeholder="输入兑换积分值" ms-duplex="@input"/>
+    
+    <div style="float: right;background: #13bffd;height: 42px;justify-content:center;
+	align-items:center;
+	display:-webkit-flex;margin-left: 14px;padding: 0px 20px 0px 20px;moz-border-radius: 6px; 
+    -webkit-border-radius: 6px; 
+    border-radius:6px;color: white" ms-click="@doJifenDuihuan" onclick="doJifenDuihuan()">
+	    兑换
+    </div>
+		
+</div>
+
+
+
+	<div class="titlenav" style="overflow: hidden;justify-content: flex-start;
+	align-items:center;
+	display:-webkit-flex;">
+		
+		<img src="image/tanhao.png" style="width: 20px;height: 20px;float: left;" />
+		
+		<div style="float: left;margin-left: 5px;">
+			兑换规则: 
+		</div>
+		
+	</div>
+
+
+<div style="padding: 12px;background: #fff;color: #999999">
+	
+	<span ms-html="@info.content"></span>
+	
+</div>
+		
+	
+</body>
+</html>

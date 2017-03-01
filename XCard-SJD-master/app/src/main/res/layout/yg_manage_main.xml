@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/APPPGBG"
+              android:gravity="center"
+    >
+
+        <com.x.custom.XHorizontalMenu
+            android:id="@+id/XHorizontalList"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:scrollbars="none"
+            />
+
+    <com.x.custom.XHorizontalMain
+        android:id="@+id/yg_manage_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+
+    </com.x.custom.XHorizontalMain>
+
+
+
+</LinearLayout>

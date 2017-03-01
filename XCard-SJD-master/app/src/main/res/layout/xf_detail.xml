@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/APPPGBG"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12dp"
+        >
+
+        <TextView
+            android:id="@+id/xf_detail_stime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="14dp"
+            style="@style/Base.Widget.AppCompat.EditText"
+            android:padding="8dp"
+            android:text="开始时间"
+            android:textColor="#999999"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="chooseStartTime"
+            />
+
+        <TextView
+            android:id="@+id/xf_detail_etime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="7dp"
+            style="@style/Base.Widget.AppCompat.EditText"
+            android:padding="8dp"
+            android:text="结束时间"
+            android:textColor="#999999"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="chooseEndTime"
+            />
+
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/orange_btn"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="4dp"
+            android:clickable="true"
+            android:onClick="doSearch"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="17dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="累计消费："
+            android:textColor="@color/APPTXTBlack"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/xf_detail_tatle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/APPOrange"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:paddingTop="14dp"
+                  android:paddingBottom="14dp"
+                  android:gravity="center_vertical"
+                  android:tag="充值卡"
+        >
+
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:text="会员"
+            android:textColor="@color/APPBlue"
+            android:textSize="18sp"
+            android:layout_weight="3"
+
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="时间"
+            android:textColor="@color/APPBlue"
+            android:textSize="18sp"
+            android:layout_weight="3"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="操作人"
+            android:textColor="@color/APPBlue"
+            android:textSize="18sp"
+            android:layout_weight="3"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="卡类型"
+            android:textColor="@color/APPBlue"
+            android:textSize="18sp"
+            android:layout_weight="3"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/app_separator_offx"
+        android:paddingRight="@dimen/app_separator_offx"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/xf_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+
+
+
+</LinearLayout>

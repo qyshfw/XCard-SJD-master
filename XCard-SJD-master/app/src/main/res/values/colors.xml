@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gray">#cecece</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="APPBlue">#4d9ceb</color>
+    <color name="HomeDarkBlue">#4992de</color>
+    <color name="white">#ffffff</color>
+    <color name="APPPGBG">#f4f5f9</color>
+    <color name="green">#339933</color>
+    <color name="APPOrange">#ff7e00</color>
+    <color name="APPTXTBlack">#333333</color>
+    <color name="CardBtnGray">#cacaca</color>
+    <color name="MoneyRed">#ff1c1b</color>
+    <color name="RadioGray">#b2b2b2</color>
+
+    <color name="APPZheZhao">#7f111111</color>
+
+    <color name="transparent">#00000000</color>
+
+</resources>

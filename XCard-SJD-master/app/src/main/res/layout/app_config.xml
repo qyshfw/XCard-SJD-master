@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:background="@color/APPPGBG"
+            android:layout_height="match_parent"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:toggle="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/APPPGBG"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="65dp"
+                  android:background="@color/white"
+                  android:layout_marginTop="12dp"
+                  android:gravity="center"
+        android:clickable="true"
+        android:onClick="toUpdateTel"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="修改手机号码"
+            android:gravity="center_vertical|left"
+            android:textColor="#333333"
+            android:layout_marginLeft="12dp"
+            android:textSize="17sp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/app_config_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="请先登录"
+            android:padding="10px"
+            android:layout_marginLeft="6dp"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow02"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="4dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/app_separator_offx"
+        android:paddingRight="@dimen/app_separator_offx"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="65dp"
+                  android:background="@color/white"
+                  android:gravity="center"
+                  android:clickable="true"
+                  android:onClick="toChangePass"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="修改登录密码"
+            android:gravity="center_vertical|left"
+            android:textColor="#333333"
+            android:layout_marginLeft="12dp"
+            android:textSize="17sp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow02"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="4dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="65dp"
+                  android:background="@color/white"
+                  android:gravity="center"
+                  android:layout_marginTop="12dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="消息推送"
+            android:gravity="center_vertical|left"
+            android:textColor="#333333"
+            android:layout_marginLeft="12dp"
+            android:textSize="17sp"
+            />
+
+
+        <com.zcw.togglebutton.ToggleButton
+            android:layout_width="54dp"
+            toggle:tbOnColor="#3fd6ad"
+            toggle:tbOffColor="#ddd"
+            toggle:tbSpotColor="#00f"
+            toggle:tbOffBorderColor="#000"
+            toggle:tbBorderWidth="2dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="12dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="65dp"
+                  android:background="@color/white"
+                  android:gravity="center"
+        android:clickable="true"
+        android:onClick="cleanCache"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="清除缓存"
+            android:gravity="center_vertical|left"
+            android:textColor="#333333"
+            android:layout_marginLeft="12dp"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/app_config_size"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="0.0M"
+            android:padding="10px"
+            android:layout_marginLeft="6dp"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow02"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="4dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="65dp"
+                  android:background="@color/white"
+                  android:gravity="center"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="检测更新"
+            android:gravity="center_vertical|left"
+            android:textColor="#333333"
+            android:layout_marginLeft="12dp"
+            android:textSize="17sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已是最新版本"
+            android:gravity="center_vertical|left"
+            android:textColor="#999999"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="65dp"
+                  android:background="@color/white"
+                  android:gravity="center"
+                  android:clickable="true"
+                  android:onClick="toFeed"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="意见反馈"
+            android:gravity="center_vertical|left"
+            android:textColor="#333333"
+            android:layout_marginLeft="12dp"
+            android:textSize="17sp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow02"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="4dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="65dp"
+                  android:background="@color/white"
+                  android:gravity="center"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="关于"
+            android:gravity="center_vertical|left"
+            android:textColor="#333333"
+            android:layout_marginLeft="12dp"
+            android:textSize="17sp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/arrow02"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="4dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/app_config_btn"
+        android:text="退出登录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/xcornersbg"
+        android:textSize="16sp"
+        android:onClick="doLogout"
+        />
+
+</LinearLayout>
+
+    </ScrollView>

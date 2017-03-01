@@ -1,0 +1,214 @@
+body {
+	padding: 0px;margin: 0px; background: #f2f2f2;zoom:1;overflow:scroll;
+}
+
+.banner {
+	width: 100%;position:relative;padding: 0px;margin: 0px;
+}
+
+.banner img {
+	width: 100%;height: auto
+}
+
+.banner .txt_left {
+	position:absolute;width:auto;height:auto;z-indent:2;left:12px;top:12px; color: #ffffff;
+}
+
+.banner .txt_right {
+	position:absolute;width:auto;height:auto;z-indent:2;right:12px;top:12px; background: rgba(0,0,0, 0.25);color: #ffffff;-moz-border-radius: 80px; 
+    -webkit-border-radius: 80px; 
+    border-radius:80px;
+    font-size: 15px;padding: 5px 10px 5px 10px;
+}
+
+.rili {
+	
+	background: #ffffff;text-align: center;height: auto; margin-top: 5px; padding: 14px 14px 8px 14px;
+}
+
+.rili .main {
+	
+	border: 1px solid #13bffd; height: auto;margin-top: 10px;overflow:hidden;
+}
+
+.rili .main .nav {
+	
+	background: #13bffd; width: 100%;height: auto;float: left;padding-top: 8px;padding-bottom: 10px;color: #ffffff;
+}
+
+.rili .main .date {
+	
+	width: 100%;height: auto;float: left;padding-top: 8px;padding-bottom: 10px;
+	
+}
+
+.rili .main .date .noenable{
+	
+	float: left;height: 100%;width: 14.2%;padding-top: 8px;padding-bottom: 10px; color: #999999;
+	
+}
+
+.rili .main .date .normal{
+	
+	float: left;height: 100%;width: 14.2%;padding-top: 8px;padding-bottom: 10px;
+	
+}
+
+.rili .main .date .selected{
+	
+	float: left;height: 100%;width: 14.2%;padding-top: 8px;padding-bottom: 10px; background: url('../image/duihao.png') no-repeat 60% 60%;background-size:20px 20px;
+	
+}
+
+.tuijian {
+	background: #ffffff;height: auto; margin-top: 5px; padding: 6px 12px 6px 0px; overflow: hidden;
+}
+
+.tuijian .lefticon{
+	background: #ff8a00;width: 4px;height: 30px;float: left;
+}
+
+.tuijian .righttxt{
+	float: left;width: auto;line-height: 30px; margin-left: 6px;font-size: 16px;
+}
+
+.goods{
+	background: #ffffff;height: auto; margin-top: 1px; padding: 6px 12px 6px 12px; overflow: hidden;
+}
+
+.goods .item{
+	width: 50%;height: auto;float: left; overflow: hidden; padding-bottom: 12px;
+}
+
+.goods .item .item_left{
+	width: 100%;height: 100%; padding-right: 20px;
+}
+
+.goods .item .item_right{
+	width: 100%;height: 100%;padding-left: 20px;
+}
+
+.goodspic{
+	height: calc(((100vw * 0.5) - 44px) * 0.75);width: 100%;overflow: hidden
+}
+
+.goods .item .name{
+	font-size: 16px;color: #333333;
+}
+
+.goods .item .price{
+	font-size: 16px; color: #ff8a00;
+}
+
+.duihuaninfo .top
+{
+	background: #ffffff;
+}
+
+.duihuaninfo .bannerpic{
+	height: calc(100vw * 7.0 / 16.0);width: 100%;overflow: hidden
+}
+
+.duihuaninfo .name{
+	padding: 8px 8px 0px 8px;
+}
+
+.duihuaninfo .price{
+	padding: 8px 8px 8px 8px;color: #ff8a00;font-size: 14px;
+}
+
+.duihuaninfo .price .left{
+	font-size: 20px; margin-right: 5px;
+}
+
+.duihuaninfo .price .right{
+	float: right;color: #999999;
+}
+
+.titlenav{
+	padding: 8px;background: #ffffff;margin-top: 10px; margin-bottom: 1px;
+}
+
+.duihuaninfo .infonv{
+	padding: 8px;background: #ffffff;margin-top: 10px;
+}
+
+.duihuaninfo .content{
+	background: #ffffff;margin-top: 1px;
+}
+
+.duihuaninfo .btn{
+	position:fixed;_position:absolute;bottom:0px;_bottom:0px;_margin-top:expression(this.style.pixelHeight+document.documentElement.scrollTop);background: #13bffd;margin-left: auto;margin-right: auto;text-align: center;left:3%;width: 94%;padding-bottom: 12px;padding-top: 12px;-moz-border-radius: 8px; 
+    -webkit-border-radius: 8px; 
+    border-radius:8px;color: #ffffff;font-size: 18px;font-weight: 900
+}
+
+.duihuaninfo .alertbg{
+	position: absolute;left: 0px;right: 0px;top: 0px;bottom: 0px;background: rgba(0,0,0,0.5);
+	justify-content:center;
+	align-items:center;
+	display:-webkit-flex;
+	font-weight: 900;
+}
+
+.duihuaninfo .hidden{
+	display: none;
+}
+
+
+.aui-content .successpic{
+	position: relative;
+    padding: 0.5rem 0;
+    padding-right: 0.75rem;
+    display: inherit;
+    -webkit-flex-shrink: 0;
+    		flex-shrink: 0;
+    -webkit-flex-wrap: nowrap;
+    		flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: flex-start;
+            align-items: flex-start;
+}
+
+.aui-content .successname{
+	font-size: 16px;
+    position: relative;
+    max-width: 100%;
+
+			    overflow: hidden;
+    color: #212121;
+    
+}
+
+.aui-content .txt{
+	
+	font-size: 0.7rem;
+    color: #757575;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    		box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-align-items: flex-start;
+    		align-items: flex-start;
+    
+}
+
+
+
+
+
+
+.flexstart{
+	    -webkit-align-items: flex-start;
+            align-items: flex-start;
+}
+
+
+
+
+

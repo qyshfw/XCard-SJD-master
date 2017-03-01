@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+<script data-main="js/index" src="lib/require-min.js" ></script>
+
+</head>
+<body>
+
+<!-- banner -->	
+<div class="banner" ms-controller="banner">
+		
+		<img src="image/banner.png"/>
+		
+		<div class="txt_left">
+			
+			<div style="font-size: 14px;">
+				恭喜您签到成功!
+			</div>
+			
+			<div style="font-size: 16px;">
+				连续签到<span style="font-size: 18px;" ms-text="@lxqdday"></span>天
+			</div>
+			   
+    </div>
+    
+    <div class="txt_right" onclick="toQDGZ()">	
+			<span >签到规则</span>
+    </div>
+		
+	</div>
+		
+</div>
+	
+<!-- 日历 -->		
+<div id="rili" class="rili" ms-controller="rili">
+	
+	<div>
+		<span ms-text="@today"></span>
+	</div>
+	
+	<div class="main">
+		
+		<div class="nav">
+			
+			<div style="float: left;height: 100%;width: 14.2%">
+				日
+			</div>
+			
+			<div style="float: left;height: 100%;width: 14.2%">
+				一
+			</div>
+			<div style="float: left;height: 100%;width: 14.2%">
+				二
+			</div>
+			<div style="float: left;height: 100%;width: 14.2%">
+				三
+			</div>
+			<div style="float: left;height: 100%;width: 14.2%">
+				四
+			</div>
+			<div style="float: left;height: 100%;width: 14.2%">
+				五
+			</div>
+			<div style="float: left;height: 100%;width: 14.2%">
+				六
+			</div>
+			
+			
+		</div>
+		
+		<div class="date" >
+			
+<!--
+			<div class="noenable">
+				31
+			</div>
+-->
+			
+			<div ms-attr="{class: item.css}" ms-for="item in @riliArr">
+				
+			<span ms-text="@item.day"></span>
+				
+			</div>
+			
+			
+			
+			
+		</div>
+
+		
+		
+		
+	</div>
+	
+</div>
+
+
+<!-- 推荐商品 -->	
+	<div class="tuijian">
+		
+		<div class="lefticon">
+			
+		</div>
+		
+		<div class="righttxt">
+			推荐商品
+		</div>
+		
+	</div>
+	
+	
+	<div id="goods" class="goods" ms-controller="goods">
+		
+		<div class="item" ms-for="(index,item) in @goodsArr" >
+			
+			<div ms-attr="{class: item.css}" ms-click = "@doDH(item)">
+				
+				<img ms-attr="{src: item.url}" class="goodspic"/>
+			
+			<div class="name">
+			<span ms-text="@item.name"></span>
+			</div>
+			
+			<div class="price">
+			<span ms-text="@item.hfb+'怀府币'"></span>
+			</div>
+			
+			</div>
+	
+			
+			
+		</div>
+		
+				
+				
+	</div>
+	
+	<div style="height: 50px;">
+	</div>
+	
+	
+	<div style="position:fixed;_position:absolute;bottom:0px;_bottom:0px;_margin-top:expression(this.style.pixelHeight+document.documentElement.scrollTop);background: #fff;margin-left: auto;margin-right: auto;text-align: center;left:0;width: 100%;padding-bottom: 12px;padding-top: 12px;font-size: 18px;font-weight: 600;border-top: 1px solid #dedede;color: #333333;
+" >
+
+		<div style="float: left;width: 50%;justify-content: center;
+	align-items:center;
+	display:-webkit-flex;" >
+		
+		<div onclick="toGoodsCenter()">
+			<img src="image/jinbi.png" style="width: 20px;height: 20px;float: left;" />
+		
+		<div style="float: left;margin-left: 5px;">
+			赚更多
+		</div>
+		</div>
+		
+
+		</div>
+		
+		<div style="float: right;width: 50%;justify-content: center;
+	align-items:center;
+	display:-webkit-flex;">
+		
+		<div onclick="toGoodsCenter()">
+			<img src="image/liwu.png" style="width: 20px;height: 20px;float: left;" />
+		
+		<div style="float: left;margin-left: 5px;">
+			去兑换
+		</div>
+		</div>
+		
+		</div>
+		
+		
+		
+		
+	</div>
+	
+	
+</body>
+</html>

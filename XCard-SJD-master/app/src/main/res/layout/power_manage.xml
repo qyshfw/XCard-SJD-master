@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/APPPGBG"
+
+    >
+
+    <TextView
+        android:id="@+id/power_manage_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="当前岗位: 经理"
+        android:textSize="16sp"
+        android:textColor="#999999"
+        />
+
+    <ListView
+        android:id="@+id/power_manage_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        >
+
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <Button
+            android:id="@+id/roundButton"
+            android:text="提交保存"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/xcornersbg"
+            android:textSize="16sp"
+            android:onClick="btnClick"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

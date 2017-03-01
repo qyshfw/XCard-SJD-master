@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/APPPGBG"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/login01"
+            android:layout_marginLeft="12dp"
+            />
+
+        <EditText
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="新手机号码"
+            android:background="@null"
+            android:padding="10px"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="12dp"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:id="@+id/user_update_tel_new" />
+
+        <com.com.x.user.XVadButton
+            android:id="@+id/user_update_tel_vadbtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/app_vad_btn"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:text="点击获取验证码"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        android:gravity="center"
+
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/login01"
+            android:layout_marginLeft="12dp"
+            />
+
+        <EditText
+            android:id="@+id/user_update_tel_old"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="原手机号码"
+            android:background="@null"
+            android:padding="10px"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="12dp"
+            android:inputType="phone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        android:gravity="center"
+
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/login03"
+            android:layout_marginLeft="12dp"
+            />
+
+        <EditText
+            android:id="@+id/user_update_tel_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="请输入验证码"
+            android:background="@null"
+            android:padding="10px"
+            android:inputType="textPassword"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="12dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/roundButton"
+        android:text="提交"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/white"
+        android:background="@drawable/xcornersbg"
+        android:textSize="16sp"
+        android:onClick="submit"
+        />
+
+</LinearLayout>

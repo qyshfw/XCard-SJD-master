@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RadioGray"
+    >
+
+    <EditText
+        android:id="@+id/card_make_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:hint="请输入手机号码"
+        android:background="@drawable/bg_edittext"
+        android:inputType="phone"
+        android:maxLength="11"
+        style="@style/Base.Widget.AppCompat.EditText"
+        />
+
+    <LinearLayout
+        android:id="@+id/card_make_notic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/card_banka_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/prompt"
+
+            />
+
+        <TextView
+            android:id="@+id/card_make_noticMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="6dp"
+            android:textColor="#ff4848"
+            android:text="158966123456暂不是会员,点击&quot;下一步 &quot;办卡"
+            />
+
+
+    </LinearLayout>
+   <LinearLayout
+       android:layout_marginLeft="10dp"
+       android:layout_marginBottom="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginTop="40dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/APPOrange"
+           android:textSize="20dp"
+           android:text="填写基本信息"/>
+       <EditText
+           android:layout_marginTop="10dp"
+           android:background="@color/white"
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:hint="请输入手机号"/>
+       <EditText
+           android:layout_marginTop="10dp"
+           android:background="@color/white"
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:hint="请输入姓名"/>
+       <TextView
+           android:layout_marginTop="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="20dp"
+           android:text="选择卡的类型"
+           android:textColor="@color/APPOrange"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:orientation="horizontal"
+          android:background="@color/white">
+          <Spinner
+              android:id="@+id/spinner1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:spinnerMode="dropdown" />
+      </LinearLayout>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/card_make_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/CardBtnGray"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btn_title"
+        android:gravity="center"
+        android:clickable="false"
+        android:onClick="btnClick"
+        ></TextView>
+
+</LinearLayout>

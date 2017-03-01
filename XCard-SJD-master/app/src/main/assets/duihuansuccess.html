@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<link rel="stylesheet" type="text/css" href="css/aui.2.0.css"/>
+
+<script data-main="js/dhsuccess" src="lib/require-min.js" ></script>
+
+</head>
+<body ms-controller="success">
+
+<!-- banner -->	
+<div class="banner" >
+		
+		<img src="image/dhsuccessimg.png"/>
+		
+</div>
+
+
+
+<div class="aui-content">
+        <ul class="aui-list aui-media-list" style="overflow: hidden;height: auto;">
+	        
+	        
+                <li class="aui-list-item" >
+                <div class="aui-media-list-item-inner">
+                    <div class="successpic">
+	                    
+                        <img ms-attr="{src: @info.url}" style="height: 83px;width: 110px;">
+                        
+                        	
+                    </div>
+                    <div class="aui-list-item-inner">
+                       
+                         <div class="txt">
+	    		
+                            <div class="successname">
+	                            <span ms-text="@info.name"></span>
+                            </div>
+                            
+                            
+                            <div  style="width: auto;	
+	position: relative;
+    font-size: 0.6rem;
+    color: #757575;
+    margin-left: 0.25rem;display: inherit;float: right;flex-shrink:0;" class="flexstart">
+	    
+	    <span ms-text="@info.hfb"></span><span >怀府币</span>
+	    
+    </div>
+    		
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div style="position: absolute;right: 0px;bottom: 0px;padding-right: 10px;padding-bottom: 8px;font-size: 13px;color: #333333;">
+	                        <span>数量: </span><span >X</span><span ms-text="@info.num"></span>
+                        </div>
+                        
+                                                
+                        
+                    </div>
+                </div>
+<!--
+                <div class="aui-info" style="padding-top:0;float: right">	
+                    <div class="aui-info-item">2015-07-14 10:31</div>
+                </div>
+-->
+            </li>
+                        
+            
+                    </ul>
+    </div>
+
+
+<div style="padding: 12px;background: #fff;">
+	
+	兑换时间: <span ms-text="@info.create_time"></span><br/>
+	领取人: <span ms-text="@info.truename"></span><br/>
+	联系人: <span ms-text="@info.lianxiren"></span><br/>
+	领取方式: <span ms-text="@info.lqfangshi"></span><br/>
+	领取地址: <span ms-text="@info.lqdizhi"></span><br/>
+
+</div>
+		
+	
+</body>
+</html>

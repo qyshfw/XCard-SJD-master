@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/APPPGBG"
+    >
+
+    <EditText
+        android:id="@+id/add_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:minLines="8"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:background="#ffffff"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:hint="有什么意见或好的想法,请告诉我们"
+        />
+
+    <Button
+        android:id="@+id/roundButton"
+        android:text="提交消息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/white"
+        android:background="@drawable/xcornersbg"
+        android:textSize="16sp"
+        android:onClick="btnClick"
+        />
+
+</LinearLayout>

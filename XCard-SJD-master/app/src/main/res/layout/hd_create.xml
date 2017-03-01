@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/APPPGBG"
+              android:fitsSystemWindows="true"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <Button
+        android:id="@+id/hd_create_header"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="+ 活动封面"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="#c6c6c6"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="18dp"
+        android:onClick="chooseHeaderImg"
+        />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="55dp"
+                  android:background="@color/white"
+                  android:gravity="center"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="18dp"
+            android:text="活动标题"
+            android:textSize="18sp"
+            android:textColor="@color/APPTXTBlack"
+            />
+
+        <EditText
+            android:id="@+id/hd_create_title"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="活动标题"
+            android:background="@null"
+            android:padding="10px"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="18dp"
+            android:inputType="text"
+            android:gravity="center_vertical|right"
+            />
+
+            </LinearLayout>
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/app_separator_offx"
+        android:paddingRight="@dimen/app_separator_offx"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"/>
+
+    </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="55dp"
+                          android:background="@color/white"
+                          android:gravity="center"
+                          android:clickable="true"
+                          android:onClick="chooseStartTime"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="18dp"
+                    android:text="开始时间"
+                    android:textSize="18sp"
+                    android:textColor="@color/APPTXTBlack"
+                    />
+
+                <TextView
+                    android:id="@+id/hd_create_stime"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="请选择"
+                    android:gravity="center_vertical|right"
+                    android:textSize="18sp"
+                    android:textColor="@color/APPTXTBlack"
+                    android:layout_marginLeft="12dp"
+                    />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/arrow02"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="12dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/app_separator_offx"
+                android:paddingRight="@dimen/app_separator_offx"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="55dp"
+                          android:background="@color/white"
+                          android:gravity="center"
+                          android:clickable="true"
+                          android:onClick="chooseEndTime"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="18dp"
+                    android:text="结束时间"
+                    android:textSize="18sp"
+                    android:textColor="@color/APPTXTBlack"
+                    />
+
+                <TextView
+                    android:id="@+id/hd_create_etime"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="请选择"
+                    android:gravity="center_vertical|right"
+                    android:textSize="18sp"
+                    android:textColor="@color/APPTXTBlack"
+                    android:layout_marginLeft="12dp"
+                    />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/arrow02"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="12dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/app_separator_offx"
+                android:paddingRight="@dimen/app_separator_offx"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="55dp"
+                          android:background="@color/white"
+                          android:gravity="center"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="18dp"
+                    android:text="活动地址"
+                    android:textSize="18sp"
+                    android:textColor="@color/APPTXTBlack"
+                    />
+
+                <EditText
+                    android:id="@+id/hd_create_address"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:hint="活动地址"
+                    android:background="@null"
+                    android:padding="10px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="18dp"
+                    android:inputType="text"
+                    android:gravity="center_vertical|right"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/app_separator_offx"
+                android:paddingRight="@dimen/app_separator_offx"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="horizontal"
+                          android:layout_width="match_parent"
+                          android:layout_height="55dp"
+                          android:background="@color/white"
+                          android:gravity="center"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="18dp"
+                    android:text="活动电话"
+                    android:textSize="18sp"
+                    android:textColor="@color/APPTXTBlack"
+                    />
+
+                <EditText
+                    android:id="@+id/hd_create_tel"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:hint="活动电话"
+                    android:background="@null"
+                    android:padding="10px"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="18dp"
+                    android:inputType="phone"
+                    android:gravity="center_vertical|right"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/app_separator_offx"
+                android:paddingRight="@dimen/app_separator_offx"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/hd_create_info"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="这里输入活动描述!"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingLeft="14dp"
+                android:background="@color/white"
+                android:gravity="top"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/card_make_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/APPOrange"
+        android:text="提交发布"
+        android:textColor="@color/white"
+        android:textSize="@dimen/btn_title"
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="doSubmit"
+        android:layout_alignParentBottom="true"
+        ></TextView>
+
+</LinearLayout>
+
+
+
+
+

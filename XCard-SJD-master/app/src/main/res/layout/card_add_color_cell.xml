@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageView
+            android:id="@+id/card_add_color_cell_bg"
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            android:background="@drawable/card_add_color_shape_selected"
+            />
+
+        <ImageView
+            android:id="@+id/card_add_color_cell_img"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:background="@color/colorAccent"
+
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

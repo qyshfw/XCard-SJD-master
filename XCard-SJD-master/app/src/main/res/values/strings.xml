@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">怀府网商家版</string>
+    <string name="action_settings">Settings</string>
+    <string name="start_login">登录</string>
+    <string name="action_more">More</string>
+    <string name="title_activity_start_login">Start_login</string>
+    <string name="start_zhuce">注册</string>
+    <string name="zhuce2_btn">登 录</string>
+
+</resources>

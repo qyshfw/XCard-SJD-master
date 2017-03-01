@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@color/APPPGBG"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/APPPGBG"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:background="@color/APPBlue"
+            >
+
+
+
+            <LinearLayout android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_marginTop="12dp"
+                          android:layout_marginBottom="12dp"
+                          android:layout_marginRight="18dp"
+                          android:layout_marginLeft="18dp"
+                          android:layout_weight="1"
+                >
+
+                <TextView android:id="@+id/yg_manage_cell_title"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:textColor="@color/white"
+                          android:textSize="16sp"
+                          android:layout_weight="1"
+                          android:lines="1"
+                          android:text="今日充值总额"
+                    />
+
+                <TextView android:id="@+id/cz_manage_tatle"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:textColor="@color/white"
+                          android:textSize="28sp"
+                          android:lines="1"
+                          android:ellipsize="end"
+                          android:text=""
+                          android:gravity="center"
+                          android:layout_marginTop="18dp"
+                          android:layout_marginBottom="18dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/cz_manage_daynum"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:textColor="@color/white"
+                          android:textSize="16sp"
+                          android:layout_weight="1"
+                          android:lines="1"
+                          android:text=""
+                          android:gravity="center"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:padding="12dp"
+                      android:layout_marginTop="12dp"
+                      android:gravity="center_vertical"
+                      android:clickable="true"
+                      android:onClick="toCZDetail"
+            >
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/recharge01"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="充值明细"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/APPTXTBlack"
+                android:textSize="18sp"
+                />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/arrow02"
+                android:layout_marginLeft="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/app_separator_offx"
+            android:paddingRight="@dimen/app_separator_offx"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eeeeee"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:padding="12dp"
+                      android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/recharge02"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="本周充值"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/APPTXTBlack"
+                android:textSize="18sp"
+                />
+
+            <TextView
+
+                android:id="@+id/cz_manage_7num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/APPTXTBlack"
+                android:textSize="17sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/app_separator_offx"
+            android:paddingRight="@dimen/app_separator_offx"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eeeeee"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:padding="12dp"
+                      android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/recharge03"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="本月充值"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/APPTXTBlack"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/cz_manage_30num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/APPTXTBlack"
+                android:textSize="17sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/app_separator_offx"
+            android:paddingRight="@dimen/app_separator_offx"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eeeeee"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:padding="12dp"
+                      android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/recharge06"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="季度充值"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/APPTXTBlack"
+                android:textSize="18sp"
+                />
+
+            <TextView
+
+                android:id="@+id/cz_manage_numjidu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/APPTXTBlack"
+                android:textSize="17sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/app_separator_offx"
+            android:paddingRight="@dimen/app_separator_offx"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eeeeee"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:padding="12dp"
+                      android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/recharge05"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="年度充值"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/APPTXTBlack"
+                android:textSize="18sp"
+                />
+
+            <TextView
+
+                android:id="@+id/cz_manage_numyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/APPTXTBlack"
+                android:textSize="17sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/app_separator_offx"
+            android:paddingRight="@dimen/app_separator_offx"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eeeeee"/>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:padding="12dp"
+                      android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/recharge04"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="充值总计"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/APPTXTBlack"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/cz_manage_allnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/APPTXTBlack"
+                android:textSize="17sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/APPPGBG"
+    >
+
+    <RelativeLayout
+        android:padding="14dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:id="@+id/hd_manage_cell_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#dcdcdc"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/hd_manage_cell_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:background="@color/APPZheZhao"
+            android:text="2016-08-15至2016-12-30"
+            android:textColor="@color/white"
+            android:paddingLeft="12dp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hd_manage_cell_title"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="仅售222.2元，价值261元精致清洗内饰，不限时段"
+        android:paddingBottom="14dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        />
+
+
+</LinearLayout>
